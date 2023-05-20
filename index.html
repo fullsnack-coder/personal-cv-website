@@ -1,27 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>CV Website</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="site-section">
-        <header class="site-header">
-            <figure class="header__avatar">
-                <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/00/00b9e0deed8454f725715699c383ee86ba8e25b0.jpg" alt="avatar">
-            </figure>
+      <header class="site-header">
+        <div class="header__background"></div>
+        <div class="header__content">
+          <figure class="header__avatar">
+            <img
+              src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/46/46b4f0c34419932463876e1f2e912d732ca1f534_full.jpg"
+              alt="avatar"
+            />
+          </figure>
+          <div class="header__right">
             <div class="header__description">
-                <h1 class="heading">Manuel Garcia</h1>
-                <h2 class="subheading">Desarrollador de software</h2>
-                <h3 class="caption">Especialista en el desarrollo con herramientas basadas en JavaScript</h3>
+              <h1 class="heading">Manuel Garcia</h1>
+              <h2 class="subheading">Desarrollador de software</h2>
+              <h3 class="caption">
+                Especialista en el desarrollo con herramientas basadas en
+                JavaScript
+              </h3>
+              <h3 class="caption">
+                <i class="fas fa-envelope"> </i>
+                <a href="mailto:manueldev250799@gmail.com">
+                  manueldev250799@gmail.com
+                </a>
+              </h3>
+              <h3 class="caption">
+                <i class="fa-brands fa-twitter"></i>
+                <a href="https://twitter.com/CodeJabberwock">
+                   @CodeJabberwock
+                </a>
+              </h3>
+              <p class="typography">
+                <a
+                  href="https://linkedin.com/in/manueldev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i>
+                    /manueldev
+                </a>
+              </p>
             </div>
-        </header>
-        <main class="site-main">
-            
-        </main>
+            <div class="header__contact-button-wrapper">
+              <a href="#contact" class="button button--contact">Contáctame</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="site-main">
+        <div class="main__content">
+          <div class="main__about-me">
+            <article class="main-section main__formal-education">
+              <h2 class="subheading">Educación</h2>
+              <div class="education">
+                <h2 class="title">Educación Superior - Pregrado</h2>
+                <p class="typography">
+                  Universidad Nacional Jose Faustino Sánchez Carrión
+                </p>
+                <span class="caption">Huacho, 2016 - Actualidad</span>
+              </div>
+              <div class="education">
+                <h2 class="title">Educación Secundaria</h2>
+                <p class="typography">Colegio Ventura CCalamaqui</p>
+                <span class="caption">Barranca, 2011 - 2015</span>
+              </div>
+              <div class="education">
+                <h2 class="title">Educación Primaria</h2>
+                <p class="typography">Colegio 21012</p>
+                <span class="caption">Barranca, 2005 - 2010</span>
+              </div>
+            </article>
+            <article class="main-section main__experience">
+              <h2 class="subheading">Experiencia</h2>
+              <label for="collapse-check" class="collapse-button">
+                <span class="collapse-button__icon"></span>
+                <span class="collapse-button__text">Expandir - Contraer</span>
+              </label>
+              <input
+                type="checkbox"
+                id="collapse-check"
+                class="collapse-check"
+              />
+              <div class="experience-group">
+                <div class="experience">
+                  <h2 class="heading title">Fullstack Developer</h2>
+                  <h3 class="caption">Freelance | Enero 2023 - Actualidad</h3>
+                  <p class="typography">
+                    Desarrollador de aplicaciones web, usando tecnologías como
+                    React.js y Node.js, operando desde el frontend y el backend.
+                  </p>
+                </div>
+                <div class="experience">
+                  <h2 class="heading title">Software Developer</h2>
+                  <h3 class="caption">
+                    Inetum Peru | Octubre, 2021 - Septiembre, 2022
+                  </h3>
+                  <p class="typography">
+                    Desarrollador de software a cargo de aplicaciones usando
+                    React, Next.js, Node.js y Graphql. Trabajando con utilerías
+                    como Material-UI y Ant-Design y software de control de
+                    versiones GIT.
+                  </p>
+                </div>
+                <div class="experience">
+                  <h2 class="heading title">Frontend Developer</h2>
+                  <h3 class="caption">
+                    RPA Latam | Septiembre, 2020 - Septiembre, 2021
+                  </h3>
+                  <p class="typography">
+                    Desarrollador Frontend, trabajando con tecnologías web del
+                    lado del frontend como React.js, REDUX, trabajando con
+                    lenguajes de preprocesado como Typescript, y software tanto
+                    para el control de versiones como para gestión de proyectos
+                    con metodologías ágiles.
+                  </p>
+                </div>
+                <div class="experience">
+                  <h2 class="heading title">Frontend Developer</h2>
+                  <h3 class="caption">
+                    Research Management Global | Enero, 2020 - Agosto, 2020
+                  </h3>
+                  <p class="typography">
+                    Programador Frontend, perteneciente al área de proyectos de
+                    la empresa y de sus clientes. Trabajando con tecnologías web
+                    del lado del frontend como React.js, Styled - components,
+                    REDUX, trabajando con lenguajes de preprocesado como
+                    Typescript, y software tanto para el control de versiones
+                    como para gestión de proyectos con metodologías ágiles.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="main-section main__certifications">
+              <h2 class="subheading">Cursos</h2>
+              <label for="collapse-check-courses" class="collapse-button">
+                <span class="collapse-button__icon"></span>
+                <span class="collapse-button__text">Expandir - Contraer</span>
+              </label>
+              <input
+                type="checkbox"
+                id="collapse-check-courses"
+                class="collapse-check"
+              />
+              <div class="course-group">
+                <div class="course">
+                  <h2 class="subheading title">
+                    Micro-Frontend: Arquitectura de Aplicaciones Web
+                  </h2>
+                  <p class="typography">
+                    Construcción de aplicaciones web escalables y mantenibles
+                    con micro-frontend.
+                  </p>
+                </div>
+                <div class="course">
+                  <h2 class="subheading title">React.js Avanzado</h2>
+                  <p class="typography">
+                    Curso avanzado de React.js para la construcción de
+                    aplicaciones web full-stack.
+                  </p>
+                </div>
+                <div class="course">
+                  <h2 class="subheading title">
+                    Docker de principiante a experto
+                  </h2>
+                  <p class="typography">
+                    Contentido de Docker desde lo más básico hasta lo más
+                    avanzado para la construcción de imagenes y contenedores
+                    para aplicaciones web.
+                  </p>
+                </div>
+                <div class="course">
+                  <h2 class="subheading title">React Testing</h2>
+                  <p class="typography">
+                    Curso para la construcción de pruebas unitarias y de
+                    integración para aplicaciones web
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <aside class="main-aside">
+            <div class="skills-wrapper">
+              <h2 class="subheading">Habilidades</h2>
+              <ul class="skills-list">
+                <li class="skills-list__item">HTML5</li>
+                <li class="skills-list__item">CSS3</li>
+                <li class="skills-list__item">JavaScript ES6</li>
+                <li class="skills-list__item">React</li>
+                <li class="skills-list__item">React Native</li>
+                <li class="skills-list__item">Node</li>
+                <li class="skills-list__item">Next.js</li>
+                <li class="skills-list__item">Typescript</li>
+                <li class="skills-list__item">Redux</li>
+                <li class="skills-list__item">GraphQL</li>
+                <li class="skills-list__item">SQL</li>
+                <li class="skills-list__item">Git</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </main>
+      <div id="contact" class="site-contact">
+        <form class="contact-form" onsubmit="javascript;">
+          <label for="input-subject" class="contact-form-label">Asunto: </label>
+          <input
+            id="input-subject"
+            type="text"
+            class="contact-form-input"
+            placeholder="Ingrese el asunto del correo de contacto"
+          />
+          <label for="input-area" class="contact-form-label"
+            >Descripción:
+          </label>
+          <textarea
+            id="input-area"
+            class="contact-form-area"
+            placeholder="Ingrese a detalle su correo de contacto"
+          ></textarea>
+          <button type="submit" class="contact-form-button">Contactar</button>
+        </form>
+      </div>
+      <footer class="site-footer">
+        <p class="typography">
+          Hecho con <span class="heart">❤</span> por Manuel Garcia
+        </p>
+      </footer>
     </section>
-</body>
+  </body>
 </html>

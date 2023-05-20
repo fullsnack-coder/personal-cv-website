@@ -1,0 +1,350 @@
+:root {
+    --primary-color: #dc143c;
+    --primary-color-light: #ff4d6a;
+    --primary-color-dark:#a31545;
+    --primary-color-very-dark: #8f5e00;
+    --cool-gray-900: #111111;
+    --cool-gray-800: #333333;
+    --cool-gray-700: #4F4F4F;
+    --cool-gray-600: #828282;
+    --cool-gray-500: #BDBDBD;
+    --cool-gray-400: #E0E0E0;
+    --cool-gray-300: #F2F2F2;
+    --cool-gray-200: #F9F9F9;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.subheading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.caption {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+.site-section {
+    font-size: 1.6rem;
+}
+
+/* HEADER SECTION */
+
+.site-header .header__background {
+    background-color: var(--cool-gray-800);
+    padding: 2rem;
+}
+
+.site-header .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3rem;
+    gap: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    position: relative;
+    top: -2rem;
+}
+
+@media screen and (min-width: 780px) {
+    .site-header .header__content {
+        flex-direction: row;
+    }
+}
+
+
+.header__avatar {
+    flex-shrink: 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 0.5rem var(--cool-gray-300);
+    box-shadow: 0px 10px 10px var(--cool-gray-300);
+}
+
+.header__avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 3rem;
+}
+
+.header__description {
+    margin-bottom: 1rem;
+}
+
+.header__description .subheading{
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 780px) {
+    .site-header .header__content {
+        justify-content: space-between;
+    }
+
+    .header__right {
+        flex-direction: row;
+        gap: 3rem;
+        flex: 1;
+        justify-content: space-between;
+        padding-right: 5rem;
+        align-items: flex-end;
+    }
+}
+
+.contact-form-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: solid 1px transparent;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.contact-form-button:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+}
+
+.button--contact {
+    background-color: var(--cool-gray-900);
+    color: var(--cool-gray-300);
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* MAIN SECTION */
+
+.site-main {
+    padding: 2rem;
+    background-color: var(--cool-gray-300);
+}
+
+.site-main .main__content {
+    max-width: 120rem;
+    margin: 0 auto;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skills-wrapper {
+    position: sticky;
+    top: 2rem;
+    padding: 2rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main-aside .skills-list__item {
+    transition: 0.3s ease-in-out;
+    transition-property: transform, color;
+    cursor: pointer;
+    padding: 1.2rem 2rem;
+    border: solid 1px var(--cool-gray-900);
+    border-radius: 2.5rem;
+    width: fit-content;
+}
+
+.main-aside .skills-list__item:hover {
+    transform: scale(1.05);
+    color: crimson;
+    border-color: crimson;
+}
+
+@media screen and (min-width: 780px) {
+    .site-main .main__content {
+        flex-direction: row;
+    }
+
+    .main__about-me {
+        width: 65%; 
+    }
+    
+    .main-aside {
+        width: 35%;
+    }
+
+}
+    
+
+.main-section {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.main-section .subheading {
+    color: var(--cool-gray-700);
+}
+
+.main-section .education,
+.main-section .experience,
+.main-section .course {
+    color: var(--cool-gray-900);
+    margin-bottom: 1.2rem;
+}
+
+.course .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.collapse-check {
+    display: none;
+}
+
+.main-section.main__experience,
+.main-section.main__certifications {
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.experience-group,
+.course-group {
+    max-height: 20rem;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.collapse-button {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.collapse-check:checked + .experience-group,
+.collapse-check:checked + .course-group {
+    max-height: 100%;
+}
+
+.collapse-check:checked ~ .collapse-button {
+    transform: rotate(180deg);
+}
+
+/* Contact section */
+
+.site-contact {
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.site-contact .contact-form {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-label {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-input,
+.contact-form-area {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: solid 1px var(--cool-gray-400);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.contact-form-area {
+    resize: none;
+    height: 15rem;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: var(--cool-gray-800);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+}
