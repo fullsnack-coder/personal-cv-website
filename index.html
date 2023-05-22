@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -23,41 +22,41 @@
         <div class="header__background"></div>
         <div class="header__content">
           <figure class="header__avatar">
-            <img
-              src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/46/46b4f0c34419932463876e1f2e912d732ca1f534_full.jpg"
-              alt="avatar"
-            />
+            <img class="first" src="./profile-pic-1.jpeg" alt="avatar-alter" />
+            <img class="second" src="./profile-pic-2.jpeg" alt="avatar" />
           </figure>
           <div class="header__right">
             <div class="header__description">
               <h1 class="heading">Manuel Garcia</h1>
               <h2 class="subheading">Desarrollador de software</h2>
-              <h3 class="caption">
+              <p class="typography">
                 Especialista en el desarrollo con herramientas basadas en
                 JavaScript
-              </h3>
-              <h3 class="caption">
-                <i class="fas fa-envelope"> </i>
-                <a href="mailto:manueldev250799@gmail.com">
-                  manueldev250799@gmail.com
-                </a>
-              </h3>
-              <h3 class="caption">
-                <i class="fa-brands fa-twitter"></i>
-                <a href="https://twitter.com/CodeJabberwock">
-                   @CodeJabberwock
-                </a>
-              </h3>
-              <p class="typography">
-                <a
-                  href="https://linkedin.com/in/manueldev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-linkedin"></i>
-                    /manueldev
-                </a>
               </p>
+              <div class="network">
+                <p class="typography">
+                  <i class="fas fa-envelope"> </i>
+                  <a href="mailto:manueldev250799@gmail.com">
+                    manueldev250799@gmail.com
+                  </a>
+                </p>
+                <p class="typography">
+                  <i class="fa-brands fa-twitter"></i>
+                  <a href="https://twitter.com/CodeJabberwock">
+                    @CodeJabberwock
+                  </a>
+                </p>
+                <p class="typography">
+                  <a
+                    href="https://linkedin.com/in/manueldev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                    /manueldev
+                  </a>
+                </p>
+              </div>
             </div>
             <div class="header__contact-button-wrapper">
               <a href="#contact" class="button button--contact">Contáctame</a>
@@ -92,7 +91,7 @@
               <h2 class="subheading">Experiencia</h2>
               <label for="collapse-check" class="collapse-button">
                 <span class="collapse-button__icon"></span>
-                <span class="collapse-button__text">Expandir - Contraer</span>
+                <span class="collapse-button__text">Expandir / Contraer</span>
               </label>
               <input
                 type="checkbox"
@@ -153,7 +152,7 @@
               <h2 class="subheading">Cursos</h2>
               <label for="collapse-check-courses" class="collapse-button">
                 <span class="collapse-button__icon"></span>
-                <span class="collapse-button__text">Expandir - Contraer</span>
+                <span class="collapse-button__text">Expandir / Contraer</span>
               </label>
               <input
                 type="checkbox"
@@ -208,6 +207,8 @@
                 <li class="skills-list__item">React Native</li>
                 <li class="skills-list__item">Node</li>
                 <li class="skills-list__item">Next.js</li>
+                <li class="skills-list__item">Jest</li>
+                <li class="skills-list__item">Cypress</li>
                 <li class="skills-list__item">Typescript</li>
                 <li class="skills-list__item">Redux</li>
                 <li class="skills-list__item">GraphQL</li>
